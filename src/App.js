@@ -135,7 +135,7 @@ function App() {
                     {ketqua.tinhtrang === '' ? 'Không có' : ketqua.tinhtrang}
                   </td>
                   <td className="px-6 py-4">
-                    {ketqua.loaisim === '' ? '3G' : ketqua.loaisim}
+                    {ketqua.loaisim === '' ? '' : ketqua.loaisim}
                   </td>
                   <td className="px-6 py-4">
                     {ketqua.comment === '' ? 'Không có' : ketqua.comment}
