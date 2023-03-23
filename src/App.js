@@ -54,6 +54,7 @@ function App() {
           name="input"
           placeholder="Nhập số cần check..."
           onChange={(e) => setInput(e.target.value)}
+          onKeyPress={e=>{if(e.key === 'Enter'){ handleClick() }}}
           value={input}
         />
       </div>
@@ -157,8 +158,10 @@ function App() {
                 id="input"
                 name="input"
                 placeholder="Nhập tên bạn để comment lên file"
-                onChange={(e) => setInputten(e.target.value)}
+                    onChange={(e) => setInputten(e.target.value)}
+                    onKeyPress={e=>{if(e.key === 'Enter'){ handleComment() }}}
                 value={inputten}
+                
               />
             </div>
             <button
