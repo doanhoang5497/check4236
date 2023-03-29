@@ -7,7 +7,6 @@ function App() {
   const [show, setShow] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [ketqua, setKetqua] = useState({});
-  console.log(ketqua);
   const handleCheck = () => {
     setHidden(true);
     if (inputname === '' || inputsocheck === '') {
@@ -29,23 +28,23 @@ function App() {
         : (socheck = inputsocheck.replace(/[^a-zA-Z0-9]/g, ''));
       axios
         .get(
-          `${process.env.REACT_APP_SCRIPT}?inputsocheck=${socheck}&inputname=${comm}`,
+          `https://script.google.com/macros/s/AKfycbzsmFiiYhxecPjoQNf6_K5uE2yTcNV7ZIBdAyiKofKQlHYwxvZ91PSdtlk9MuHVkWzN/exec?inputsocheck=${socheck}&inputname=${comm}`,
         )
         .then((res) => {
           setKetqua(res.data);
 
           if (res.data.giaban === '') {
             axios.get(
-              `https://api.telegram.org/bot${process.env.REACT_APP_TOKEN_TELE}/sendMessage?chat_id=${process.env.REACT_APP_CHAT_ID}&text=Số đã bán - ${inputsocheck} - ${inputname}`,
+              `https://api.telegram.org/bot6178275628:AAHZ2OkJgzL1mYPH-aGYLOe-PVG0-_O2VlA/sendMessage?chat_id=-976512408&text=Số đã bán - ${inputsocheck} - ${inputname}`,
             );
           } else {
             if (res.data.status === 'notfound') {
               axios.get(
-                `https://api.telegram.org/bot${process.env.REACT_APP_TOKEN_TELE}/sendMessage?chat_id=${process.env.REACT_APP_CHAT_ID}&text=Số không thuộc kho 4236 - ${inputsocheck} - ${inputname}`,
+                `https://api.telegram.org/bot6178275628:AAHZ2OkJgzL1mYPH-aGYLOe-PVG0-_O2VlA/sendMessage?chat_id=-976512408&text=Số không thuộc kho 4236 - ${inputsocheck} - ${inputname}`,
               );
             } else {
               axios.get(
-                `https://api.telegram.org/bot${process.env.REACT_APP_TOKEN_TELE}/sendMessage?chat_id=${process.env.REACT_APP_CHAT_ID}&text=${inputsocheck} - ${inputname} - số còn`,
+                `https://api.telegram.org/bot6178275628:AAHZ2OkJgzL1mYPH-aGYLOe-PVG0-_O2VlA/sendMessage?chat_id=-976512408&text=${inputsocheck} - ${inputname} - số còn`,
               );
             }
           }
