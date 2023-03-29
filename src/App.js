@@ -76,6 +76,11 @@ function App() {
           onChange={(e) => {
             setInputname(e.target.value);
           }}
+          onKeyPress={(e) => {
+            if (e.key === 'Enter') {
+              handleCheck();
+            }
+          }}
         />
         <Input
           color="blue"
@@ -83,6 +88,11 @@ function App() {
           input={inputsocheck}
           onChange={(e) => {
             setInputsocheck(e.target.value);
+          }}
+          onKeyPress={(e) => {
+            if (e.key === 'Enter') {
+              handleCheck();
+            }
           }}
         />
 
