@@ -55,7 +55,7 @@ function App() {
   };
   return (
     <div className=" p-8 ">
-      <div className="header flex w-1/2 flex-col gap-6">
+      <div className="header flex flex-col gap-6">
         <h1 className="text-primary mt-0 mb-2 text-center text-5xl font-medium leading-tight">
           CHECK SỐ KHO 4236
         </h1>
