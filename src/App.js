@@ -100,7 +100,7 @@ function App() {
           Check
         </Button>
       </div>
-      <div className="content flex w-1/2 flex-col gap-6 mt-8">
+      <div className="content flex flex-col gap-6 mt-8">
         <h3 className="text-center">Kết quả check số</h3>
         {ketqua.status === 'notfound' ? (
           'Không tìm thấy số trong kho 4236. Cần hỗ trợ liên hệ Đoàn'
