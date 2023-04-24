@@ -100,6 +100,7 @@ function App() {
           Check
         </Button>
       </div>
+      <div>Hồ sơ mọi người xin chuẩn giúp e có cả video ạ</div>
       <div className="content flex flex-col gap-6 mt-8">
         <h3 className="text-center">Kết quả check số</h3>
         {ketqua.status === 'notfound' ? (
