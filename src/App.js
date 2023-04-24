@@ -41,8 +41,8 @@ function App() {
             if (res.data.status === 'notfound') {
               axios.get(
                 `https://api.telegram.org/bot6178275628:AAHZ2OkJgzL1mYPH-aGYLOe-PVG0-_O2VlA/sendMessage?chat_id=-976512408&text=Số không thuộc kho 4236 - ${inputsocheck} - ${inputname}`,
-              );
-            } else {
+                );
+              } else {
               axios.get(
                 `https://api.telegram.org/bot6178275628:AAHZ2OkJgzL1mYPH-aGYLOe-PVG0-_O2VlA/sendMessage?chat_id=-976512408&text=${inputsocheck} - ${inputname} - số còn`,
               );
@@ -51,14 +51,15 @@ function App() {
           setHidden(false);
         })
         .catch((error) => console.log(error));
-    }
-  };
+      }
+    };
   return (
     <div className=" p-8 ">
       <div className="header flex flex-col gap-6">
         <h1 className="text-primary mt-0 mb-2 text-center text-5xl font-medium leading-tight">
           CHECK SỐ KHO 4236
         </h1>
+    <div>Hồ sơ mọi người xin chuẩn giúp e có cả video ạ</div>
         <Alert
           show={show}
           color="red"
@@ -100,7 +101,6 @@ function App() {
           Check
         </Button>
       </div>
-      <div>Hồ sơ mọi người xin chuẩn giúp e có cả video ạ</div>
       <div className="content flex flex-col gap-6 mt-8">
         <h3 className="text-center">Kết quả check số</h3>
         {ketqua.status === 'notfound' ? (
