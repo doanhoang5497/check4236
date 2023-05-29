@@ -60,7 +60,7 @@ function App() {
           CHECK SỐ KHO 4236
         </h1>
         <div>Hồ sơ mọi người xin chuẩn giúp e có cả video ạ</div>
-        <Alert
+        {/* <Alert
           show
           color="red"
           animate={{
@@ -70,7 +70,7 @@ function App() {
         >
           Hiện tại công ty đang trong quá trình chuyển văn phòng. chưa thể làm
           sim ngay. m.n chú ý báo khách giúp e
-        </Alert>
+        </Alert> */}
         <Alert
           show={show}
           color="red"
