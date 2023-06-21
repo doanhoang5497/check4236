@@ -60,7 +60,7 @@ function App() {
           CHECK SỐ KHO 4236
         </h1>
         <div>Hồ sơ mọi người xin chuẩn giúp e có cả video ạ</div>
-        {/* <Alert
+        <Alert
           show
           color="red"
           animate={{
@@ -68,9 +68,8 @@ function App() {
             unmount: { y: 100 },
           }}
         >
-          Hiện tại công ty đang trong quá trình chuyển văn phòng. chưa thể làm
-          sim ngay. m.n chú ý báo khách giúp e
-        </Alert> */}
+          Mobi đăng ký thông tin đang tạm ngưng. Mọi người báo khách cod lấy sim gốc tự ra điểm giao dịch đăng ký thông tin hoặc sim nào đủ phí giao dịch hộ thì nhờ gdh đktt đc giao giúp
+        </Alert>
         <Alert
           show={show}
           color="red"
