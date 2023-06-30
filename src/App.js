@@ -68,7 +68,9 @@ function App() {
             unmount: { y: 100 },
           }}
         >
-          Mobi đăng ký thông tin đang tạm ngưng. Mọi người báo khách cod lấy sim gốc tự ra điểm giao dịch đăng ký thông tin hoặc sim nào đủ phí giao dịch hộ thì nhờ gdh đktt đc giao giúp
+          Mobi hiện tại không đăng ký thông tin gián tiếp đươc. Mọi người COD
+          sim gốc nhờ khách tự ra điểm giao dịch hoặc giao dịch hộ để đăng ký
+          thông tin trực tiếp nhé! Thắc mắc liên hệ e Đoàn đẹp trai!!!!!
         </Alert>
         <Alert
           show={show}
