@@ -68,7 +68,7 @@ function App() {
             unmount: { y: 100 },
           }}
         >
-          Mobi đã đăng ký lại được rồi. Nhưng sẽ hơi chậm hơn trc 1 chút.
+          Mobi đã đăng ký lại được rồi. Nhưng sẽ hơi chậm hơn trc 1 chút
         </Alert>
         <Alert
           show={show}
