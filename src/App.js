@@ -68,7 +68,7 @@ function App() {
             unmount: { y: 100 },
           }}
         >
-          Mobi đã đăng ký lại được rồi. Nhưng sẽ hơi chậm hơn trc 1 chút
+          Viettel hiện tại k đăng ký được gián tiếp mọi người check sim nguyên kít thì có thể nhờ cod sim gốc khách tự đăng ký hoặc nhờ gdh đến đktt trực tiếp
         </Alert>
         <Alert
           show={show}
