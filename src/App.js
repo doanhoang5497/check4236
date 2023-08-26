@@ -68,7 +68,8 @@ function App() {
             unmount: { y: 100 },
           }}
         >
-          Viettel và Mobi hiện tại k đăng ký được gián tiếp mọi người check sim nguyên kít thì có thể nhờ cod sim gốc khách tự đăng ký hoặc nhờ gdh đến đktt trực tiếp nếu được
+          Viettel hiện tại k đăng ký được gián tiếp mọi người check sim nguyên kít thì có thể nhờ cod sim gốc khách tự đăng ký hoặc nhờ gdh đến đktt trực tiếp nếu được.
+          Mobi đang đăng ký ảo sang tên nên sẽ hơi lâu 1 chút. m.n chú ý xin hồ sơ đẹp giúp e
         </Alert>
         <Alert
           show={show}
