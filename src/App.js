@@ -139,10 +139,10 @@ function App() {
               <th>Loại phôi 3G/4G:</th>
               <td>{ketqua.loaisim}</td>
             </tr>
-            <tr className="divide-x divide-blue-200">
+            {/* <tr className="divide-x divide-blue-200">
               <th>Cột:</th>
               <td>{ketqua.cot}</td>
-            </tr>
+            </tr> */}
             <tr className="divide-x divide-blue-200">
               <th>Comment:</th>
               <td>{ketqua.comment}</td>
